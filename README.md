@@ -1,7 +1,9 @@
 Note: 
 The solution code of this project is from scratch based on the following codelabs:
-1. Tutorial with provided solution step by step - https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet
-2. Project with provided solution code at the end - https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-amphibians-app
+1. Tutorial with provided solution step by step -
+   https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet
+3. Project with provided solution code at the end -
+   https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-amphibians-app
 
 
 
