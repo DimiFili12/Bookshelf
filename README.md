@@ -1,6 +1,14 @@
+Note: 
+The solution code of this project is from scratch based on the following codelabs:
+1. Tutorial with provided solution step by step - https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet
+2. Project with provided solution code at the end - https://developer.android.com/codelabs/basic-android-kotlin-compose-practice-amphibians-app
+
+
+
+
 Project description:    
 You're going to build an app on your own that displays a list of books with images from the Google Books API, using coroutines, Retrofit and Kotlin Serialization. The app is expected to do the following:    
-1.Make a request to the Google Books API using Retrofit.    
+1. Make a request to the Google Books API using Retrofit.    
 2. Parse the response.    
 3. Display asynchronously downloaded images of the books along with their titles in a vertical grid.    
 4. Implement best practices, separating the UI and data layer, by using a repository.    
