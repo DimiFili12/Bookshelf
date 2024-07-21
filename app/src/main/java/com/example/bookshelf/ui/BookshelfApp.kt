@@ -20,6 +20,7 @@ import com.example.bookshelf.R
 import com.example.bookshelf.ui.screens.HomeViewModel
 import com.example.bookshelf.ui.screens.HomeScreen
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BookshelfApp() {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()
@@ -46,6 +47,7 @@ fun BookshelfApp() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BookshelfTopAppBar(
     scrollBehavior: TopAppBarScrollBehavior,

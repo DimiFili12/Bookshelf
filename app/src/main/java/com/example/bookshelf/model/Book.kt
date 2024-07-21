@@ -9,5 +9,5 @@ data class Book(
 
 @Serializable
 data class Items(
-    val id: String,
+    val id: String
 )

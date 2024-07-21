@@ -27,8 +27,8 @@ class HomeViewModel(private val bookshelfRepository: BookshelfRepository) : View
     var bookshelfUiState: BookshelfUiState by mutableStateOf(BookshelfUiState.Loading)
         private set
 
-    val thumbnails: List<String> get() = _thumbnails.toList()
     private val _thumbnails: MutableList<String> = mutableListOf()
+    val thumbnails: List<String> get() = _thumbnails.toList()
 
     init {
         getAllBooks()

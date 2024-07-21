@@ -13,11 +13,13 @@ interface AppContainer {
 class DefaultAppContainer : AppContainer {
     private val baseUrl = "https://www.googleapis.com/books/v1/"
 
+    private val json = Json { ignoreUnknownKeys = true }
+
     private val retrofit: Retrofit = Retrofit.Builder()
-        .addConverterFactory(
-            Json{ ignoreUnknownKeys = true }
-                .asConverterFactory("application/json".toMediaType()))
         .baseUrl(baseUrl)
+        .addConverterFactory(
+            json.asConverterFactory("application/json".toMediaType())
+        )
         .build()
 
     private val retrofitService: BookshelfApiService by lazy {
