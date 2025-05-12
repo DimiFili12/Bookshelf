@@ -1,13 +1,15 @@
 package com.example.bookshelf.data
 
-import com.example.bookshelf.network.BookshelfApiService
+import com.example.bookshelf.data.network.BookshelfApiService
+import com.example.bookshelf.data.repository.BookshelfRepositoryInterface
+import com.example.bookshelf.data.repository.BookshelfRepository
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
 
 interface AppContainer {
-    val bookshelfRepository: BookshelfRepository
+    val bookshelfRepositoryInterface: BookshelfRepositoryInterface
 }
 
 class DefaultAppContainer : AppContainer {
@@ -26,7 +28,7 @@ class DefaultAppContainer : AppContainer {
         retrofit.create(BookshelfApiService::class.java)
     }
 
-    override val bookshelfRepository: BookshelfRepository by lazy {
-        NetworkBookshelfRepository(retrofitService)
+    override val bookshelfRepositoryInterface: BookshelfRepositoryInterface by lazy {
+        BookshelfRepository(retrofitService)
     }
 }

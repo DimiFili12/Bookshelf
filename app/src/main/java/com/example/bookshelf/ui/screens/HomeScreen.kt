@@ -1,4 +1,4 @@
-package com.example.bookshelf.ui.screens
+    package com.example.bookshelf.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.bookshelf.R
-import com.example.bookshelf.model.Book
+import com.example.bookshelf.data.model.Book
 
 @Composable
 fun HomeScreen(
